@@ -9,34 +9,61 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
+        <script src="/js/scripts.js"></script>
     </head>
+
+    <body>
+        <nav class="navbar sticky-top bg-body-tertiary" >
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html" id="tituloNavbar">Colegio Colegial</a>
+            </div>
+        </nav>
+        <div id="carouselAutoplay" class="carousel slide" data-bs-ride="carousel" style="width: 100%; height: 410px;">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="https://usefulnext.com/wp-content/uploads/2021/08/Modern-Generic-High-School-Facade.jpg" class="d-block w-100" height="400px">
+                </div>
+                <div class="carousel-item">
+                <img src="https://wallpapercave.com/wp/wp1888099.jpg" class="d-block w-100" height="400px">
+                </div>
+                <div class="carousel-item">
+                <img src="https://www.renderhub.com/squir/generic-schoolbus-1980/generic-schoolbus-1980-01.jpg" class="d-block w-100" height="400px">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplay" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplay" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="row">
+            <div class="col-2">
+    
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="correo" class="form-label">¿Quiere recibir noticias?</label>
+                                <input type="email" class="form-control" id="correo" aria-describedby="ayudaEmail" placeholder="E-mail">
+                            </div>
+                            
+                            <button type="button" onclick="mostrarSuccess()" class="btn btn-primary">Suscribirse</button>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+    
+            </div>
+    
+        </div>
+        <div id="textoSuscrito"></div>
+    </body>
 </html>
 
-<body>
-    <nav class="navbar sticky-top bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Colegio Colegial</a>
-        </div>
-    </nav>
-    <div id="carouselAutoplay" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-            <img src="https://usefulnext.com/wp-content/uploads/2021/08/Modern-Generic-High-School-Facade.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-            <img src="https://wallpapercave.com/wp/wp1888099.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-            <img src="https://www.renderhub.com/squir/generic-schoolbus-1980/generic-schoolbus-1980-01.jpg" class="d-block w-100" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplay" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplay" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-</body>
