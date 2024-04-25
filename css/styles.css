@@ -1,3 +1,11 @@
 #tituloNavbar{
-    color: rgb(121, 121, 121);
+    color: rgb(216, 216, 216);
+}
+
+button.btn-primary{
+    --bs-btn-bg: var(--bg);
+}
+
+label{
+    color: aquamarine;
 }
